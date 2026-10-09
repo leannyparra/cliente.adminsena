@@ -53,7 +53,7 @@
         <!-- Barra de Botones Inferior -->
         <div class="bg-light border-top p-4 d-flex justify-content-end gap-3">
             <!-- Retorno seguro al listado con tu ruta real -->
-            <a href="{{ url('training-center/list') }}" class="btn fw-semibold px-4 py-2 border text-secondary bg-white shadow-sm custom-btn-cancel" style="font-size: 0.85rem; letter-spacing: 0.5px;">
+            <a href="{{ route('trainingCenter.index') }}" class="btn fw-semibold px-4 py-2 border text-secondary bg-white shadow-sm custom-btn-cancel" style="font-size: 0.85rem; letter-spacing: 0.5px;">
                 VOLVER
             </a>
         </div>

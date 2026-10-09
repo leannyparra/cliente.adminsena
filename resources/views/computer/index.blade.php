@@ -90,7 +90,7 @@
         <!-- BUSCADOR -->
 
         <form
-            action="{{ url('computer/list') }}"
+            action="{{ route('computer.index') }}"
             method="GET"
             class="search-form"
         >
@@ -109,7 +109,7 @@
                 @if(request('search'))
 
                     <a
-                        href="{{ url('computer/list') }}"
+                        href="{{ route('computer.index') }}"
                         class="clear-search"
                         title="Limpiar búsqueda"
                     >
@@ -254,6 +254,41 @@
                                 >
                                     <i class="bi bi-eye"></i>
                                 </a>
+
+                                <!-- EDITAR -->
+
+                                <a
+                                    href="{{ route('computer.edit', $computer['id']) }}"
+                                    class="action-btn edit-btn"
+                                    title="Editar equipo"
+                                >
+                                    <i class="bi bi-pencil"></i>
+                                </a>
+
+
+                                <!-- ELIMINAR -->
+
+                                <form
+                                    action="{{ route('computer.destroy', $computer['id']) }}"
+                                    method="POST"
+                                    class="delete-form"
+                                >
+
+                                    @csrf
+                                    @method('delete')
+
+                                    <button
+                                        type="submit"
+                                        class="action-btn delete-btn"
+                                        title="Eliminar equipo"
+                                        onclick="return confirm('¿Estás seguro de que deseas eliminar este equipo?')"
+                                    >
+
+                                        <i class="bi bi-trash3"></i>
+
+                                    </button>
+
+                                </form>
 
                             </div>
 

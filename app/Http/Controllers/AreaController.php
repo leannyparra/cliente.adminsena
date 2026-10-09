@@ -32,4 +32,43 @@ class AreaController extends Controller
 
         return view('area.show', compact('area'));
     }
+
+
+    public function create()
+    {
+        return view('area.create');
+    }
+
+    public function store(Request $request)
+    {
+        $url = env('URL_SERVER_API');
+
+        Http::post($url . '/area', $request->all());
+
+        return redirect()->route('area.index');
+    }
+
+    public function edit($id)
+    {
+        $url = env('URL_SERVER_API');
+        $area = $this->fetchDataFromApi($url . '/area/' . $id);
+        return view('area.edit', compact('area'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $url = env('URL_SERVER_API');
+
+        Http::put($url . '/area/' . $id, $request->all());
+
+        return redirect()->route('area.index');
+    }
+          
+    public function destroy($id)
+    {
+        $url = env('URL_SERVER_API');
+        Http::delete($url . '/area/' . $id);
+        return redirect()->route('area.index');
+    }
+
 }

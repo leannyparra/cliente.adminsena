@@ -78,7 +78,7 @@
         <!-- BUSCADOR -->
 
         <form
-            action="{{ url('area/list') }}"
+            action="{{ route('area.index') }}"
             method="GET"
             class="search-form"
         >
@@ -97,7 +97,7 @@
                 @if(request('search'))
 
                     <a
-                        href="{{ url('area/list') }}"
+                        href="{{ route('area.index') }}"
                         class="clear-search"
                         title="Limpiar búsqueda"
                     >
@@ -223,6 +223,42 @@
                                 >
                                     <i class="bi bi-eye"></i>
                                 </a>
+
+                                
+                                <!-- EDITAR -->
+
+                                <a
+                                    href="{{ route('area.edit', $area['id']) }}"
+                                    class="action-btn edit-btn"
+                                    title="Editar área"
+                                >
+                                    <i class="bi bi-pencil"></i>
+                                </a>
+
+
+                                <!-- ELIMINAR -->
+
+                                <form
+                                    action="{{ route('area.destroy', $area['id']) }}"
+                                    method="POST"
+                                    class="delete-form"
+                                >
+
+                                    @csrf
+                                    @method('delete')
+
+                                    <button
+                                        type="submit"
+                                        class="action-btn delete-btn"
+                                        title="Eliminar área"
+                                        onclick="return confirm('¿Estás seguro de que deseas eliminar esta área?')"
+                                    >
+
+                                        <i class="bi bi-trash3"></i>
+
+                                    </button>
+
+                                </form>
 
                             </div>
 

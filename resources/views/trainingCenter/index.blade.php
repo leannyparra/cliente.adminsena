@@ -82,7 +82,7 @@
             <!-- BUSCADOR -->
 
             <form
-                action="{{ url('training-center/list') }}"
+                action="{{ route('trainingCenter.index') }}"
                 method="GET"
                 class="search-box"
             >
@@ -98,7 +98,7 @@
 
                 @if(request('search'))
                     <a
-                        href="{{ url('training-center/list') }}"
+                        href="{{ route('trainingCenter.index') }}"
                         class="clear-search"
                         title="Limpiar búsqueda"
                     >
@@ -227,6 +227,42 @@
                                         <span>Ver</span>
                                     </a>
 
+                                    <!-- EDITAR -->
+
+                                    <a
+                                        href="{{ route('trainingCenter.edit', $center['id']) }}"
+                                        class="action-btn action-edit"
+                                        title="Editar centro"
+                                    >
+                                        <i class="bi bi-pencil"></i>
+                                        <span>Editar</span>
+                                    </a>
+
+
+                                    <!-- ELIMINAR -->
+
+                                    <form
+                                        action="{{ route('trainingCenter.destroy', $center['id']) }}"
+                                        method="POST"
+                                        class="delete-form"
+                                    >
+
+                                        @csrf
+                                        @method('delete')
+
+                                        <button
+                                            type="submit"
+                                            class="action-delete"
+                                            title="Eliminar centro"
+                                            onclick="return confirm('¿Estás seguro de que deseas eliminar este centro de formación?')"
+                                        >
+
+                                            <i class="bi bi-trash3"></i>
+
+                                        </button>
+
+                                    </form>
+
                                 </div>
 
                             </td>
@@ -260,7 +296,7 @@
                                     @if(request('search'))
 
                                         <a
-                                            href="{{ url('training-center/list') }}"
+                                            href="{{ route('trainingCenter.index') }}"
                                             class="empty-link"
                                         >
                                             Limpiar búsqueda
