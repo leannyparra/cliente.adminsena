@@ -1,0 +1,626 @@
+
+/* =========================================
+   APPRENTICE EDIT
+========================================= */
+
+body {
+    background: #f6f8f7 !important;
+}
+
+.apprentice-edit-page {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 35px 25px 55px;
+}
+
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+.apprentice-edit-header {
+    margin-bottom: 25px;
+}
+
+.apprentice-edit-header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.apprentice-edit-back-button {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 11px;
+    background: white;
+    border: 1px solid #e6ebe6;
+
+    color: #68716b;
+    font-size: 17px;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.apprentice-edit-back-button:hover {
+    background: #eef7ea;
+    border-color: #d6eacc;
+    color: #39A900;
+}
+
+.apprentice-edit-header-icon {
+    width: 54px;
+    height: 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 16px;
+
+    font-size: 22px;
+
+    background: linear-gradient(
+        135deg,
+        #39A900,
+        #2d8800
+    );
+
+    color: white;
+
+    box-shadow:
+        0 8px 20px rgba(57, 169, 0, 0.18);
+}
+
+.apprentice-edit-header-left h1 {
+    margin: 0;
+
+    color: #202922;
+
+    font-size: 28px;
+    font-weight: 750;
+
+    letter-spacing: -0.6px;
+}
+
+.apprentice-edit-header-left p {
+    margin: 4px 0 0;
+
+    color: #858e88;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   TARJETA PRINCIPAL
+========================================= */
+
+.apprentice-edit-card {
+    background: white;
+
+    border: 1px solid #e8ece8;
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 30px rgba(30, 50, 35, 0.055);
+}
+
+
+/* =========================================
+   ENCABEZADO DE TARJETA
+========================================= */
+
+.apprentice-edit-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 25px 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fbfdfb,
+            #f5faf3
+        );
+
+    border-bottom: 1px solid #e8eee7;
+}
+
+.apprentice-edit-student-preview {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+}
+
+.apprentice-edit-student-avatar {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 16px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e1f5d8,
+            #cbeab9
+        );
+
+    color: #31780e;
+
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.apprentice-edit-student-label {
+    display: block;
+
+    color: #89938c;
+
+    font-size: 9px;
+    font-weight: 750;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 2px;
+}
+
+.apprentice-edit-student-preview h2 {
+    margin: 0;
+
+    color: #273029;
+
+    font-size: 17px;
+    font-weight: 720;
+}
+
+.apprentice-edit-student-id {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #8c958e;
+
+    font-size: 11px;
+}
+
+.apprentice-edit-status {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 8px 12px;
+
+    border-radius: 9px;
+
+    background: #eaf7e3;
+    color: #397c1d;
+
+    font-size: 10px;
+    font-weight: 650;
+}
+
+
+/* =========================================
+   CUERPO
+========================================= */
+
+.apprentice-edit-card-body {
+    padding: 0 0 25px;
+}
+
+
+/* =========================================
+   TÍTULOS DE SECCIÓN
+========================================= */
+
+.apprentice-edit-section-title {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin: 28px 30px 20px;
+}
+
+.apprentice-edit-second-section {
+    margin-top: 35px;
+}
+
+.apprentice-edit-section-icon {
+    width: 39px;
+    height: 39px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 11px;
+
+    font-size: 16px;
+
+    background: #eaf7e3;
+    color: #39A900;
+}
+
+.apprentice-edit-section-title h3 {
+    margin: 0;
+
+    color: #29322c;
+
+    font-size: 14px;
+    font-weight: 720;
+}
+
+.apprentice-edit-section-title p {
+    margin: 3px 0 0;
+
+    color: #929a94;
+
+    font-size: 11px;
+}
+
+
+/* =========================================
+   FORM GRID
+========================================= */
+
+.apprentice-edit-form-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+    padding: 0 30px;
+}
+
+
+/* =========================================
+   INPUT GROUP
+========================================= */
+
+.apprentice-edit-input-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #4c554f;
+
+    font-size: 12px;
+    font-weight: 650;
+}
+
+.apprentice-edit-input-group label span {
+    color: #e05252;
+
+    margin-left: 2px;
+}
+
+
+/* =========================================
+   INPUT WRAPPER
+========================================= */
+
+.apprentice-edit-input-wrapper {
+    position: relative;
+}
+
+.apprentice-edit-input-wrapper > i:first-child {
+    position: absolute;
+
+    left: 14px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #9aa39d;
+
+    font-size: 15px;
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+.apprentice-edit-input-wrapper input,
+.apprentice-edit-input-wrapper select {
+    width: 100%;
+    height: 46px;
+
+    box-sizing: border-box;
+
+    padding: 0 15px 0 42px;
+
+    border: 1px solid #e1e6e2;
+    border-radius: 11px;
+
+    background: #fafbfa;
+
+    color: #333;
+
+    font-size: 13px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+.apprentice-edit-input-wrapper input::placeholder {
+    color: #b0b6b1;
+}
+
+.apprentice-edit-input-wrapper input:focus,
+.apprentice-edit-input-wrapper select:focus {
+    background: white;
+
+    border-color: #8acb68;
+
+    box-shadow:
+        0 0 0 3px rgba(57, 169, 0, 0.08);
+}
+
+
+/* =========================================
+   READONLY
+========================================= */
+
+.apprentice-edit-readonly input {
+    background: #f2f4f2;
+
+    color: #89918b;
+
+    cursor: not-allowed;
+}
+
+.apprentice-edit-lock-icon {
+    position: absolute;
+
+    right: 14px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #a1a8a2;
+
+    font-size: 11px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* =========================================
+   SELECT
+========================================= */
+
+.apprentice-edit-select-wrapper select {
+    appearance: none;
+    -webkit-appearance: none;
+
+    cursor: pointer;
+
+    padding-right: 42px;
+}
+
+.apprentice-edit-select-arrow {
+    position: absolute;
+
+    right: 15px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #8d968f;
+
+    font-size: 12px;
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   AVISO
+========================================= */
+
+.apprentice-edit-warning-box {
+    margin: 28px 30px 0;
+
+    padding: 14px 16px;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 12px;
+
+    background: #f5faf2;
+
+    border: 1px solid #e1efdb;
+
+    border-radius: 12px;
+}
+
+.apprentice-edit-warning-icon {
+    color: #39A900;
+
+    margin-top: 1px;
+    font-size: 16px;
+
+    display: flex;
+}
+
+.apprentice-edit-warning-box strong {
+    display: block;
+
+    color: #45603b;
+
+    font-size: 12px;
+
+    margin-bottom: 3px;
+}
+
+.apprentice-edit-warning-box p {
+    margin: 0;
+
+    color: #778171;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.apprentice-edit-form-footer {
+    display: flex;
+
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 30px;
+
+    padding: 20px 30px 0;
+
+    border-top: 1px solid #edf0ed;
+}
+
+
+/* =========================================
+   BOTÓN CANCELAR
+========================================= */
+
+.apprentice-edit-cancel-button {
+    height: 42px;
+
+    padding: 0 18px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    border-radius: 10px;
+
+    background: white;
+
+    border: 1px solid #dfe4df;
+
+    color: #626b64;
+
+    font-size: 12px;
+    font-weight: 650;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.apprentice-edit-cancel-button:hover {
+    background: #f3f5f3;
+
+    color: #333b35;
+}
+
+
+/* =========================================
+   BOTÓN GUARDAR
+========================================= */
+
+.apprentice-edit-save-button {
+    height: 42px;
+
+    padding: 0 20px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #39A900;
+
+    color: white;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 6px 15px rgba(57, 169, 0, 0.18);
+
+    transition: 0.25s;
+}
+
+.apprentice-edit-save-button:hover {
+    background: #2e8d00;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 8px 20px rgba(57, 169, 0, 0.25);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .apprentice-edit-page {
+        padding: 25px 15px 40px;
+    }
+
+    .apprentice-edit-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .apprentice-edit-card-top {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .apprentice-edit-status {
+        align-self: flex-start;
+    }
+
+    .apprentice-edit-form-footer {
+        flex-direction: column-reverse;
+
+        align-items: stretch;
+    }
+
+    .apprentice-edit-cancel-button,
+    .apprentice-edit-save-button {
+        width: 100%;
+    }
+}
+

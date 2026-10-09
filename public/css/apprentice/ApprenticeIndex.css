@@ -1,0 +1,768 @@
+
+/* =========================================
+   APPRENTICE INDEX
+========================================= */
+
+.apprentice-index-page {
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 35px 30px 50px;
+}
+
+
+/* =========================
+   HEADER
+========================== */
+
+.apprentice-index-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 30px;
+
+    gap: 20px;
+}
+
+.apprentice-index-header-info {
+    display: flex;
+    align-items: center;
+
+    gap: 17px;
+}
+
+.apprentice-index-header-icon {
+    width: 58px;
+    height: 58px;
+
+    border-radius: 17px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #39A900,
+        #2e8b00
+    );
+
+    color: white;
+
+    font-size: 24px;
+
+    box-shadow:
+        0 8px 20px rgba(57,169,0,.20);
+}
+
+.apprentice-index-header-info h1 {
+    margin: 0;
+
+    color: #18231b;
+
+    font-size: 30px;
+    font-weight: 750;
+
+    letter-spacing: -.7px;
+}
+
+.apprentice-index-header-info p {
+    margin: 5px 0 0;
+
+    color: #7b847e;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   BOTÓN NUEVO
+========================== */
+
+.apprentice-index-btn-new {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 13px 20px;
+
+    border-radius: 12px;
+
+    background: #39A900;
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 650;
+
+    box-shadow:
+        0 7px 18px rgba(57,169,0,.20);
+
+    transition: .25s ease;
+}
+
+.apprentice-index-btn-new i {
+    font-size: 17px;
+}
+
+.apprentice-index-btn-new:hover {
+    background: #2e8d00;
+
+    color: white;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 22px rgba(57,169,0,.28);
+}
+
+
+/* =========================
+   ESTADÍSTICAS
+========================== */
+
+.apprentice-index-stats-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+
+    margin-bottom: 25px;
+}
+
+.apprentice-index-stat-card {
+    background: white;
+
+    border: 1px solid #edf0ed;
+
+    border-radius: 17px;
+
+    padding: 19px 21px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    box-shadow:
+        0 4px 15px rgba(25,45,30,.035);
+
+    transition: .25s ease;
+}
+
+.apprentice-index-stat-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(25,45,30,.07);
+}
+
+.apprentice-index-stat-icon {
+    width: 46px;
+    height: 46px;
+
+    border-radius: 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+}
+
+.apprentice-index-green {
+    background: #eaf7e3;
+    color: #39A900;
+}
+
+.apprentice-index-blue {
+    background: #eaf3ff;
+    color: #3984d9;
+}
+
+.apprentice-index-purple {
+    background: #f2edff;
+    color: #7855d8;
+}
+
+.apprentice-index-stat-label {
+    display: block;
+
+    color: #858d87;
+
+    font-size: 12px;
+
+    margin-bottom: 3px;
+}
+
+.apprentice-index-stat-card strong {
+    color: #202a23;
+
+    font-size: 23px;
+
+    font-weight: 750;
+}
+
+
+/* =========================
+   CARD TABLA
+========================== */
+
+.apprentice-index-content-card {
+    background: white;
+
+    border: 1px solid #edf0ed;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 7px 25px rgba(30,50,35,.045);
+}
+
+
+/* =========================
+   TOOLBAR
+========================== */
+
+.apprentice-index-table-toolbar {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 23px 25px;
+
+    border-bottom: 1px solid #edf0ed;
+}
+
+.apprentice-index-table-toolbar h2 {
+    margin: 0;
+
+    color: #202922;
+
+    font-size: 17px;
+
+    font-weight: 720;
+}
+
+.apprentice-index-table-toolbar p {
+    margin: 4px 0 0;
+
+    color: #8a928c;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   BUSCADOR
+========================== */
+
+.apprentice-index-search-box {
+    position: relative;
+
+    width: 270px;
+}
+
+.apprentice-index-search-box i {
+    position: absolute;
+
+    left: 14px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #9aa29c;
+
+    font-size: 15px;
+}
+
+.apprentice-index-search-box input {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 11px 14px 11px 39px;
+
+    border: 1px solid #e6eae6;
+
+    border-radius: 11px;
+
+    background: #fafbfa;
+
+    outline: none;
+
+    font-size: 13px;
+
+    color: #333;
+
+    transition: .2s;
+}
+
+.apprentice-index-search-box input:focus {
+    background: white;
+
+    border-color: #8bcf68;
+
+    box-shadow:
+        0 0 0 3px rgba(57,169,0,.08);
+}
+
+
+/* =========================
+   TABLA
+========================== */
+
+.apprentice-index-table-wrapper {
+    overflow-x: auto;
+}
+
+.apprentice-index-modern-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 1000px;
+}
+
+.apprentice-index-modern-table thead {
+    background: #fafcf9;
+}
+
+.apprentice-index-modern-table th {
+    padding: 14px 20px;
+
+    color: #89918b;
+
+    font-size: 10px;
+
+    font-weight: 750;
+
+    letter-spacing: .7px;
+
+    border-bottom: 1px solid #edf0ed;
+
+    white-space: nowrap;
+}
+
+.apprentice-index-modern-table td {
+    padding: 17px 20px;
+
+    border-bottom: 1px solid #f0f2f0;
+
+    color: #59625c;
+
+    font-size: 13px;
+
+    vertical-align: middle;
+}
+
+.apprentice-index-modern-table tbody tr {
+    transition: .2s ease;
+}
+
+.apprentice-index-modern-table tbody tr:hover {
+    background: #fbfdfb;
+}
+
+.apprentice-index-modern-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.apprentice-index-text-center {
+    text-align: center;
+}
+
+
+/* =========================
+   ID
+========================== */
+
+.apprentice-index-id-badge {
+    display: inline-flex;
+
+    padding: 6px 9px;
+
+    border-radius: 8px;
+
+    background: #f3f5f3;
+
+    color: #68716b;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   APRENDIZ
+========================== */
+
+.apprentice-index-apprentice-info {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.apprentice-index-avatar {
+    width: 43px;
+    height: 43px;
+
+    min-width: 43px;
+
+    border-radius: 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #e4f6da,
+        #cdeebd
+    );
+
+    color: #2e7b0a;
+
+    font-size: 12px;
+
+    font-weight: 800;
+}
+
+.apprentice-index-name-container strong {
+    display: block;
+
+    color: #252e28;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+.apprentice-index-name-container span {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #929a94;
+
+    font-size: 11px;
+}
+
+
+/* =========================
+   CONTACTO
+========================== */
+
+.apprentice-index-contact-info {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+.apprentice-index-contact-info div {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    white-space: nowrap;
+}
+
+.apprentice-index-contact-info i {
+    color: #8e9891;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   CURSO / EQUIPO
+========================== */
+
+.apprentice-index-course-badge,
+.apprentice-index-equipment-badge,
+.apprentice-index-no-equipment {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 8px 11px;
+
+    border-radius: 9px;
+
+    font-size: 11px;
+
+    font-weight: 650;
+
+    white-space: nowrap;
+}
+
+.apprentice-index-course-badge {
+    background: #f2f5f2;
+
+    color: #59625b;
+}
+
+.apprentice-index-course-badge i {
+    color: #79837c;
+}
+
+.apprentice-index-equipment-badge {
+    background: #eaf7e3;
+
+    color: #337a13;
+}
+
+.apprentice-index-equipment-badge i {
+    color: #39A900;
+}
+
+.apprentice-index-no-equipment {
+    background: #f7f7f7;
+
+    color: #9b9f9b;
+}
+
+
+/* =========================
+   ACCIONES
+========================== */
+
+.apprentice-index-actions {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 7px;
+}
+
+.apprentice-index-action {
+    width: 35px;
+    height: 35px;
+
+    border-radius: 9px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid transparent;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: .2s ease;
+}
+
+.apprentice-index-action:hover {
+    transform: translateY(-2px);
+}
+
+
+/* VER */
+
+.apprentice-index-view {
+    background: #f1f4f2;
+
+    color: #66706a;
+
+    border-color: #e7ebe7;
+}
+
+.apprentice-index-view:hover {
+    background: #e5eae6;
+
+    color: #29322c;
+}
+
+
+/* EDITAR */
+
+.apprentice-index-edit {
+    background: #eaf7e3;
+
+    color: #39A900;
+
+    border-color: #d7edcc;
+}
+
+.apprentice-index-edit:hover {
+    background: #39A900;
+
+    color: white;
+
+    border-color: #39A900;
+
+    box-shadow:
+        0 5px 12px rgba(57,169,0,.20);
+}
+
+
+/* ELIMINAR */
+
+.apprentice-index-delete {
+    background: #fff1f1;
+
+    color: #e05252;
+
+    border-color: #f9dddd;
+}
+
+.apprentice-index-delete:hover {
+    background: #e05252;
+
+    color: white;
+
+    border-color: #e05252;
+
+    box-shadow:
+        0 5px 12px rgba(224,82,82,.18);
+}
+
+
+/* =========================
+   ESTADO VACÍO
+========================== */
+
+.apprentice-index-empty-state {
+    padding: 70px 20px;
+
+    text-align: center;
+}
+
+.apprentice-index-empty-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 15px;
+
+    border-radius: 20px;
+
+    background: #eef7e9;
+
+    color: #39A900;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+}
+
+.apprentice-index-empty-state h3 {
+    margin: 0 0 7px;
+
+    color: #29322c;
+
+    font-size: 17px;
+}
+
+.apprentice-index-empty-state p {
+    color: #929993;
+
+    font-size: 13px;
+
+    margin-bottom: 20px;
+}
+
+.apprentice-index-btn-empty {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 10px 16px;
+
+    border-radius: 10px;
+
+    background: #39A900;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 650;
+}
+
+.apprentice-index-btn-empty:hover {
+    background: #2e8d00;
+
+    color: white;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================== */
+
+@media (max-width: 900px) {
+
+    .apprentice-index-page {
+        padding: 25px 18px 40px;
+    }
+
+    .apprentice-index-stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .apprentice-index-page-header {
+        align-items: flex-start;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .apprentice-index-page-header {
+        flex-direction: column;
+    }
+
+    .apprentice-index-btn-new {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    .apprentice-index-table-toolbar {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 17px;
+    }
+
+    .apprentice-index-search-box {
+        width: 100%;
+    }
+
+    .apprentice-index-header-info h1 {
+        font-size: 25px;
+    }
+
+}
+

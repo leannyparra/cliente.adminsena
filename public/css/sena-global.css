@@ -1,0 +1,39 @@
+/* Variables de color de la identidad SENA */
+:root {
+  --sena-green: #39A900;
+  --sena-dark-green: #0c5c05;
+  --sena-bg-light: #f8f9fa;
+  --sena-text-dark: #212529;
+}
+
+/* Reset base para asegurar el footer al final de la pantalla */
+html, body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: var(--sena-bg-light);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Transiciones globales para enlaces y botones */
+a, button {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Scrollbar personalizado opcional */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--sena-dark-green);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--sena-green);
+}

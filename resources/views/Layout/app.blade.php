@@ -24,6 +24,12 @@
         rel="stylesheet"
     >
 
+    <!-- Diseño base AdminSENA (variables, tipografía, fondo) -->
+    <link
+        href="{{ asset('css/sena-global.css') }}"
+        rel="stylesheet"
+    >
+
     @yield('styles')
 </head>
 

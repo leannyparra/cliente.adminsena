@@ -1,0 +1,470 @@
+/* =========================================
+   APPRENTICE CREATE - NUEVO APRENDIZ
+========================================= */
+
+.apprentice-create-page {
+    width: 100%;
+    min-height: 100vh;
+    background: #f6f8f6;
+    padding: 48px 15px;
+    box-sizing: border-box;
+    color: #172033;
+}
+
+.apprentice-create-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+.apprentice-create-header {
+    margin-bottom: 4px;
+}
+
+.apprentice-create-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 50rem;
+
+    color: #39a900;
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    padding: 0.5rem 1.1rem;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.apprentice-create-back:hover {
+    background: #39a900;
+    border-color: #39a900;
+    color: #ffffff;
+    box-shadow: 0 0.5rem 1rem rgba(57, 169, 0, 0.2);
+}
+
+.apprentice-create-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    margin-top: 1.5rem;
+}
+
+.apprentice-create-page-icon {
+    width: 58px;
+    height: 58px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 1rem;
+
+    background: linear-gradient(135deg, #39a900, #0c5c05);
+    color: #ffffff;
+    font-size: 1.5rem;
+
+    box-shadow: 0 0.75rem 1.5rem rgba(57, 169, 0, 0.3);
+}
+
+.apprentice-create-title-wrapper h1 {
+    margin: 0;
+    color: #172033;
+    font-size: 1.85rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+}
+
+.apprentice-create-title-wrapper p {
+    margin: 5px 0 0;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+/* =========================
+   TARJETA
+========================= */
+
+.apprentice-create-card {
+    width: 100%;
+    margin-top: 26px;
+
+    background: #ffffff;
+    border: 1px solid #eef1f4;
+    border-radius: 1.25rem;
+    overflow: hidden;
+
+    box-shadow: 0 0.75rem 1.75rem rgba(12, 92, 5, 0.08);
+}
+
+/* =========================
+   BANNER
+========================= */
+
+.apprentice-create-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    background: linear-gradient(135deg, #0c5c05, #2e8800);
+    color: #ffffff;
+
+    padding: 1.4rem 2rem;
+}
+
+.apprentice-create-banner-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.apprentice-create-banner-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0.85rem;
+
+    background: rgba(255, 255, 255, 0.15);
+    font-size: 1.3rem;
+}
+
+.apprentice-create-banner-label {
+    margin: 0;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+}
+
+.apprentice-create-banner-title {
+    margin: 2px 0 0;
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+.apprentice-create-banner-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50rem;
+
+    padding: 0.4rem 1rem;
+
+    font-size: 0.8rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.apprentice-create-status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #7aff5e;
+}
+
+/* =========================
+   FORMULARIO
+========================= */
+
+.apprentice-create-form {
+    padding: 2rem;
+}
+
+/* =========================
+   SECCIONES
+========================= */
+
+.apprentice-create-section + .apprentice-create-section {
+    margin-top: 1.75rem;
+    padding-top: 1.75rem;
+    border-top: 1px dashed #e2e6ea;
+}
+
+.apprentice-create-section-title {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.85rem;
+
+    margin-bottom: 1.25rem;
+}
+
+.apprentice-create-section-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0.7rem;
+
+    background: #e8f5e9;
+    color: #39a900;
+    font-size: 1.1rem;
+}
+
+.apprentice-create-section-title h5 {
+    margin: 0;
+    color: #172033;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.apprentice-create-section-title p {
+    margin: 3px 0 0;
+    color: #6c757d;
+    font-size: 0.8rem;
+}
+
+/* =========================
+   GRID DE CAMPOS
+========================= */
+
+.apprentice-create-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+}
+
+.apprentice-create-field {
+    min-width: 0;
+}
+
+.apprentice-create-field-full {
+    grid-column: 1 / -1;
+}
+
+.apprentice-create-label {
+    display: block;
+    margin-bottom: 0.5rem;
+
+    color: #172033;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.apprentice-create-label span {
+    color: #e05252;
+    margin-left: 3px;
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+.apprentice-create-input-wrap {
+    position: relative;
+}
+
+.apprentice-create-input-wrap > i {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    color: #aeb6bd;
+    font-size: 1rem;
+
+    pointer-events: none;
+    transition: color 0.2s ease;
+    z-index: 2;
+}
+
+.apprentice-create-input-wrap:focus-within > i {
+    color: #39a900;
+}
+
+.apprentice-create-input {
+    display: block;
+    width: 100%;
+    min-height: 48px;
+
+    padding: 12px 14px 12px 42px;
+
+    border: 1px solid #e2e6ea;
+    border-radius: 0.75rem;
+
+    background: #ffffff;
+    color: #172033;
+    font-family: inherit;
+    font-size: 0.92rem;
+
+    outline: none;
+    box-sizing: border-box;
+
+    transition: all 0.2s ease;
+}
+
+.apprentice-create-input::placeholder {
+    color: #9aa4ad;
+}
+
+.apprentice-create-input:focus {
+    border-color: #39a900;
+    box-shadow: 0 0 0 4px rgba(57, 169, 0, 0.12);
+}
+
+.apprentice-create-select {
+    cursor: pointer;
+    height: 48px;
+    padding: 0 14px 0 42px;
+}
+
+/* =========================
+   FOOTER DEL FORMULARIO
+========================= */
+
+.apprentice-create-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eef1f4;
+}
+
+.apprentice-create-security {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+
+    color: #6c757d;
+    font-size: 0.85rem;
+}
+
+.apprentice-create-security i {
+    color: #39a900;
+    font-size: 1rem;
+}
+
+.apprentice-create-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.apprentice-create-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    min-height: 46px;
+    padding: 0.7rem 1.6rem;
+
+    border-radius: 0.75rem;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.apprentice-create-button-light {
+    color: #6c757d;
+    background: #ffffff;
+    border: 1px solid #e2e6ea;
+}
+
+.apprentice-create-button-light:hover {
+    background: #f1f3f5;
+    color: #172033;
+}
+
+.apprentice-create-button-success {
+    color: #ffffff;
+    background: #39a900;
+    border: 1px solid #39a900;
+
+    box-shadow: 0 0.35rem 0.9rem rgba(57, 169, 0, 0.25);
+}
+
+.apprentice-create-button-success:hover {
+    background: #2e8500;
+    border-color: #2e8500;
+    transform: translateY(-2px);
+    box-shadow: 0 0.6rem 1.2rem rgba(57, 169, 0, 0.3);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 767.98px) {
+    .apprentice-create-page {
+        padding: 32px 15px;
+    }
+
+    .apprentice-create-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .apprentice-create-field-full {
+        grid-column: auto;
+    }
+
+    .apprentice-create-form {
+        padding: 1.25rem;
+    }
+
+    .apprentice-create-banner {
+        padding: 1.25rem;
+    }
+
+    .apprentice-create-footer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .apprentice-create-actions {
+        flex-direction: column-reverse;
+    }
+
+    .apprentice-create-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .apprentice-create-title-wrapper {
+        align-items: flex-start;
+    }
+
+    .apprentice-create-title-wrapper h1 {
+        font-size: 1.5rem;
+    }
+
+    .apprentice-create-page-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 1.25rem;
+    }
+
+    .apprentice-create-banner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

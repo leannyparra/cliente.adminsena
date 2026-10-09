@@ -1,0 +1,373 @@
+/* =========================================
+   APPRENTICE SHOW - DETALLE DEL APRENDIZ
+========================================= */
+
+.apprentice-show-page {
+    min-height: 100vh;
+    background: #f6f8f6;
+    padding: 48px 15px;
+    box-sizing: border-box;
+}
+
+.apprentice-show-container {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+.apprentice-show-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 50rem;
+
+    color: #39a900;
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    padding: 0.5rem 1.1rem;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.apprentice-show-back:hover {
+    background: #39a900;
+    border-color: #39a900;
+    color: #ffffff;
+    box-shadow: 0 0.5rem 1rem rgba(57, 169, 0, 0.2);
+}
+
+.apprentice-show-header {
+    margin-bottom: 32px;
+}
+
+.apprentice-show-header-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    margin-top: 1.5rem;
+}
+
+.apprentice-show-header-icon {
+    width: 58px;
+    height: 58px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 1rem;
+
+    background: linear-gradient(135deg, #39a900, #0c5c05);
+    color: #ffffff;
+    font-size: 1.5rem;
+
+    box-shadow: 0 0.75rem 1.5rem rgba(57, 169, 0, 0.3);
+}
+
+.apprentice-show-header-title h1 {
+    margin: 0;
+    color: #172033;
+    font-size: 1.85rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.apprentice-show-header-title p {
+    margin: 4px 0 0;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+/* =========================
+   TARJETA PRINCIPAL
+========================= */
+
+.apprentice-show-card {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #eef1f4;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    box-shadow: 0 0.75rem 1.75rem rgba(12, 92, 5, 0.08);
+}
+
+/* =========================
+   BANNER
+========================= */
+
+.apprentice-show-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    background: linear-gradient(135deg, #0c5c05, #2e8800);
+    color: #ffffff;
+
+    padding: 1.5rem 2rem;
+}
+
+.apprentice-show-banner-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    min-width: 0;
+}
+
+.apprentice-show-banner-icon {
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0.9rem;
+
+    background: rgba(255, 255, 255, 0.15);
+    font-size: 1.4rem;
+}
+
+.apprentice-show-banner-label {
+    margin: 0;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+}
+
+.apprentice-show-banner-name {
+    margin: 2px 0 0;
+    font-size: 1.5rem;
+    font-weight: 800;
+    overflow-wrap: anywhere;
+}
+
+.apprentice-show-banner-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-shrink: 0;
+
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50rem;
+
+    padding: 0.4rem 1rem;
+
+    font-size: 0.82rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.apprentice-show-banner-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #7aff5e;
+}
+
+/* =========================
+   CONTENIDO
+========================= */
+
+.apprentice-show-content {
+    padding: 2rem;
+}
+
+.apprentice-show-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.apprentice-show-field {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.9rem;
+
+    background: #f8faf8;
+    border: 1px solid #eef1f4;
+    border-radius: 0.9rem;
+
+    padding: 1.1rem;
+}
+
+.apprentice-show-field-wide {
+    grid-column: 1 / -1;
+}
+
+.apprentice-show-field-primary {
+    background: #f1fbef;
+    border-color: rgba(57, 169, 0, 0.35);
+}
+
+.apprentice-show-field-icon {
+    flex-shrink: 0;
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0.7rem;
+
+    background: #e8f5e9;
+    color: #39a900;
+    font-size: 1.15rem;
+}
+
+.apprentice-show-field label {
+    display: block;
+    margin: 0 0 4px;
+    color: #6c757d;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.apprentice-show-field p {
+    margin: 0;
+    color: #172033;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+}
+
+.apprentice-show-field-primary p {
+    color: #0c5c05;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/* =========================
+   ESTADO
+========================= */
+
+.apprentice-show-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.apprentice-show-status-dot {
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #39a900;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.apprentice-show-footer {
+    display: flex;
+    justify-content: flex-end;
+
+    border-top: 1px solid #eef1f4;
+    background: #fafbfa;
+
+    padding: 1.25rem 2rem;
+}
+
+.apprentice-show-btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    background: #39a900;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.75rem;
+
+    padding: 0.7rem 1.4rem;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.apprentice-show-btn-back:hover {
+    background: #2e8500;
+    transform: translateY(-2px);
+    box-shadow: 0 0.6rem 1.2rem rgba(57, 169, 0, 0.25);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 767.98px) {
+    .apprentice-show-page {
+        padding: 32px 15px;
+    }
+
+    .apprentice-show-banner {
+        padding: 1.25rem;
+    }
+
+    .apprentice-show-content {
+        padding: 1.25rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .apprentice-show-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .apprentice-show-field-wide {
+        grid-column: auto;
+    }
+
+    .apprentice-show-header-title {
+        align-items: flex-start;
+    }
+
+    .apprentice-show-header-title h1 {
+        font-size: 1.5rem;
+    }
+
+    .apprentice-show-header-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 1.25rem;
+    }
+
+    .apprentice-show-banner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .apprentice-show-banner-name {
+        font-size: 1.25rem;
+    }
+
+    .apprentice-show-footer {
+        padding: 1.25rem;
+    }
+
+    .apprentice-show-btn-back {
+        width: 100%;
+        justify-content: center;
+    }
+}

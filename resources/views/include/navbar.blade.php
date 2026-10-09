@@ -171,7 +171,7 @@
                                     ? 'bg-light fw-bold text-success'
                                     : '' }}"
 
-                               href="{{ url('teacher/list') }}">
+                               href="{{ route('teacher.index') }}">
 
                                 <i class="bi bi-person-workspace me-2"></i>
                                 Instructores
@@ -189,7 +189,7 @@
                                     ? 'bg-light fw-bold text-success'
                                     : '' }}"
 
-                               href="{{ url('course/list') }}">
+                               href="{{ route('course.index') }}">
 
                                 <i class="bi bi-book me-2"></i>
                                 Cursos / Fichas
@@ -207,7 +207,7 @@
                                     ? 'bg-light fw-bold text-success'
                                     : '' }}"
 
-                               href="{{ url('apprentice/list') }}">
+                               href="{{ route('apprentice.index') }}">
 
                                 <i class="bi bi-people me-2"></i>
                                 Aprendices
