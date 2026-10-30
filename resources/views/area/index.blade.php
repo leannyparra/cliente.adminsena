@@ -137,6 +137,10 @@
                         Estado
                     </th>
 
+                    <th>
+                        imagen
+                    </th>
+                    
                     <th class="actions-column">
                         Acciones
                     </th>
@@ -207,7 +211,8 @@
 
                         </td>
 
-
+<td><img src="{{ $area['imagen_url'] }}" alt="{{ $area['name'] }}" width="100">
+                                </td>
                         <!-- ACCIONES -->
 
                         <td>

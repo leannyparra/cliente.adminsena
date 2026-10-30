@@ -144,7 +144,9 @@
                     <th>
                         Equipo
                     </th>
-
+                    <th>
+                        imagen
+                    </th>
                     <th>
                         Marca
                     </th>
@@ -238,6 +240,10 @@
 
                         </td>
 
+                        </td>
+
+<td><img src="{{ $computer['imagen_url'] }}" alt="{{ $computer['name'] }}" width="100">
+                                </td>
 
                         <!-- ACCIONES -->
 

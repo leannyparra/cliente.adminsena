@@ -661,7 +661,20 @@
         <form
             action="{{ route('computer.store') }}"
             method="POST"
+            enctype="multipart/form-data"
         >
+                    <div class="mb-4">
+                                <label for="imagen" class="form-label">
+                                    Imagen
+                                </label>
+
+                                <input type="file"
+                                    id="imagen"
+                                    name="imagen"
+                                    class="form-control"
+                                    accept="image/jpeg,image/png,image/webp"
+                                    required>
+                            </div>
 
             @csrf
 
